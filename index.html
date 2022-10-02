@@ -5,6 +5,13 @@
 <link rel="stylesheet" href="css/style.css">
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
 <title> Hailey Gonzales | Fantasy Author </title>
 </head>
 <body>
@@ -14,7 +21,7 @@
 </div>
 
 <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="#news">Books</a>
     <a href="news.html">News</a>
     <a href="#about">Contact</a>
@@ -25,12 +32,12 @@
 </div>
 
 <div class="row carr">
-            <h2>Spark of Magic</h2>
-            <h5>Blue Haven Witches Book One</h5>
-        <div class="leftcolumn">
-            
-                <img class="duoimg" src="images/spark-of-magic.jpg" alt="spark-of-magic">
-            
+    <div class="title">
+            <h2>Spark of Magic (Blue Haven Witches Book One)</h2>
+    </div>
+
+        <div class="leftcolumn">   
+                <img class="duoimg" src="images/spark-of-magic.jpg" alt="spark-of-magic">  
         </div>
             
         <div class="rightcolumn">
@@ -66,5 +73,18 @@
   <h2>Footer</h2>
 </div>
 
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
+
