@@ -123,6 +123,7 @@ p {
     /* padding-left: 70px;   */
     text-align: center;
 }
+
   
 
 /* Add a card effect for articles */
@@ -155,11 +156,26 @@ input[type="submit"] {
     padding: 15px 25px;
     border: none;
     width: 100%;
+    font-size: large;
   }
   
   input[type="submit"]:hover {
      background-color: #4ba0e6;
   }
+
+input[type="button"] {
+    background-color: rgb(103, 188, 236);
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    width: 30%;
+    font-size: large;
+}
+
+input[type="button"]:hover {
+    background-color: #4ba0e6;
+ }
+  
 
 .social-icons{
     text-align: center;
