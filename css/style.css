@@ -104,6 +104,7 @@ p {
 .duoimg{
     width: 80%;
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -124,6 +125,29 @@ p {
     text-align: center;
 }
 
+.big-header{
+    /* font-family: 'Lustria'; */
+    font-family: 'Cinzel';
+    font-size: 44px; 
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.smaller-header{
+    font-family: 'Cinzel';
+    font-size: 30px; 
+    text-align: center;
+}
+
+.book-header{
+    font-family:'Lustria';
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
   
 
 /* Add a card effect for articles */
@@ -138,9 +162,9 @@ p {
     /* padding: 40px; */
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 2px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    /* padding-top: 2px; */
+    /* margin-top: 20px; */
+    margin-bottom: 40px; 
 }
 
 /* Clear floats after the columns */
@@ -272,6 +296,7 @@ p {
   .leftcolumn {
      text-align: center; 
      float: left;
+     padding-top: 0px;
   }
 
   .header{
