@@ -63,7 +63,13 @@ p {
     color: rgb(218, 218, 218);
 }
 
+.title-link{
+    text-decoration: none;
+}
 
+.title-link:link, .title-link:hover, .title-link:visited, .title-link:active{
+    color: rgb(218, 218, 218);
+}
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 
@@ -128,7 +134,7 @@ p {
 .big-header{
     /* font-family: 'Lustria'; */
     font-family: 'Cinzel';
-    font-size: 30px; 
+    font-size: 44px; 
     text-align: center;
     margin-top: 30px;
     margin-bottom: 5px;
@@ -136,14 +142,14 @@ p {
 
 .smaller-header{
     font-family: 'Cinzel';
-    font-size: 25px; 
+    font-size: 30px; 
     text-align: center;
 }
 
 .book-header{
     font-family:'Lustria';
     text-align: center;
-    font-size: 27px;
+    font-size: 32px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -319,6 +325,19 @@ should open and close the topnav (.icon) */
     .topnav a.icon {
       float: right;
       display: block;
+    }
+
+    .big-header{
+        font-size: 30px; 
+    }
+    
+    .smaller-header{
+        font-size: 25px; 
+    }
+    
+    .book-header{
+
+        font-size: 27px;
     }
   }
   
