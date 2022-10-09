@@ -95,6 +95,12 @@ p {
     text-align: center;
 }
 
+.duocolumn{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
@@ -251,6 +257,8 @@ p {
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
   }
+
+  .show {display:block;}
 
 
   hr {
