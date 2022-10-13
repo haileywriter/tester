@@ -321,6 +321,26 @@ p {
   }
 }
 
+.authorimg{
+  text-align: center;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+
+.author-text{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .authorimg{
+    width: 60%;
+  }
+}
+
 
 /* When the screen is less than 600 pixels wide, hide all links, 
 except for the first one ("Home"). Show the link that contains 
@@ -345,6 +365,10 @@ should open and close the topnav (.icon) */
     .book-header{
 
         font-size: 27px;
+    }
+      
+      .authorimg{
+      width: 70%;
     }
   }
   
