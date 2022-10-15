@@ -2,18 +2,66 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
+
+    /* This fixes it but messes it up the responsiveness */
+    
+     /* display: flex;
+    justify-content: center; */
+     
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
-    display: block;
+    float: left; 
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 16px; 
     text-decoration: none;
     font-size: 17px;
   }
+
+  /* The dropdown container */
+.dropdown {
+  /* float: left; */
+  overflow: hidden;
+  /* display: inline-block; */
+  float: left;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    /* background-color: rgb(97, 97, 97); */
+    background-color: #ddd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
   
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -123,6 +171,22 @@ p {
     width: 60%;
     text-align: center;
 }
+
+.authorimg{
+  text-align: center;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+}
+
+.author-text{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+
 
 .column {   
     float: left;
@@ -239,23 +303,6 @@ p {
   margin-top: 20px;
 }
 
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
 
   .show {display:block;}
 
@@ -265,27 +312,7 @@ p {
 }
   
   
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    /* background-color: #f9f9f9; */
-    /* background-color: rgb(97, 97, 97); */
-    background-color: #ddd;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
@@ -298,6 +325,17 @@ p {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+  .news-text{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+.color{
+  /* background-color: rgb(205, 231, 231); */
+  background-color: #E1E9EE;
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -321,26 +359,22 @@ p {
   }
 }
 
-.authorimg{
-  text-align: center;
-  width: 40%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
-}
-
-.author-text{
-  padding-left: 40px;
-  padding-right: 40px;
-}
 
 @media screen and (max-width: 1200px) {
   .authorimg{
     width: 60%;
   }
-}
 
+  .author-text{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .news-text{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, 
 except for the first one ("Home"). Show the link that contains 
@@ -366,17 +400,15 @@ should open and close the topnav (.icon) */
 
         font-size: 27px;
     }
-      
-      .authorimg{
+
+    .authorimg{
       width: 70%;
     }
 
-.author-text{
-
-padding-left: 0px;
-  padding-right: 0px;
-
-}
+    .author-text{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -392,6 +424,7 @@ padding-left: 0px;
       display: block;
       text-align: left;
     }
+
 
     .topnav.responsive .dropdown {float: none;}
     .topnav.responsive .dropdown-content {position: relative;}
