@@ -87,12 +87,14 @@ font-family: Arial;
 /* font-family:'Verdana'; */
 /* font-family: Quattrocento; */
 /* padding: 20px; */
-line-height: 1.5;
 background: white;
 }
 
 p {
   font-size: 18px;
+
+line-height: 1.5;
+
 }
 
 /* Header/Blog Title */
